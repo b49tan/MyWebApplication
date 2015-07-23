@@ -1,0 +1,85 @@
+﻿<!DOCTYPE HTML>
+<!--
+	Photon by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Tanu's Summer Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="Scripts/angularClock.css" />
+        <style>
+            topclock{
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 999;
+                width: 100%;
+                height: 23px;
+            }
+        </style>
+		<script src="Scripts/jquery-1.7.1.js"></script>
+									<!--  <script src="Scripts/Bootstrap.js"></script> -->
+									<script src="Scripts/angular.js"></script>   
+									<script src="Scripts/angular-resource.js"></script> 
+									<script src="Scripts/angular-route.js"></script> 
+        <script src="Scripts/angularClock.js"></script> 
+									<script src="/app.js"></script>
+									<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"> 
+       
+      </head>
+	<body data-ng-app="TodoListApp" >
+
+        
+		<!-- Header -->
+			<section id="header">
+                
+					        <div class="inner">					
+					       				        
+					        <ul class="actions" ng-controller="MenuCtrl">
+						        <li ng-repeat="option in menuOptions">
+                                    <a ng-href="#/{{option}}" class="button scrolly">See {{option}}</a>
+						        </li>
+					        </ul>
+                    
+                            </div>
+	          
+			</section>
+
+		<!-- One -->
+        <div data-ng-view></div>
+
+		
+		<!-- Footer -->
+			<section id="footer">
+				<ul class="icons">
+					<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+               
+			</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+            <script src="assets/js/clock.js"> </script>
+          
+	</body>
+</html>
