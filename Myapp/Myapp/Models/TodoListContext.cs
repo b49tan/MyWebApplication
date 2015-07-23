@@ -17,6 +17,12 @@ namespace Myapp.Models
         {
         }
 
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            Database.SetInitializer(
+                new MigrateDatabaseToLatestVersion<TodoListContext, Migrations.Configuration>());
+        }
+
         public DbSet<TodoList> TodoLists { get; set; }
     }
 }
